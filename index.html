@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>STARTUP Connect</title>
+   
+<body>
+<header>
+    <a href="#" class="logo"><span>STARTUP</span>Connect</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="#Startups" onclick="toggleMenu();">Startups</a></li>
+        <li><a href="#invZAS    AZZtors" onclick="toggleMenu();">Investisseurs</a></li>
+        <li><a href="#jobs" onclick="toggleMenu();">Emplois</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>Bienvenue sur STARTUPConnect</h2>
+        <p>Nous sommes ravis de vous accueillir sur StartupConnect, où l'innovation rencontre l'investissement et où les opportunités se transforment en succès. Rejoignez-nous dès aujourd'hui pour façonner l'avenir ensemble. Si vous avez besoin d'assistance, notre équipe dévouée est là pour vous aider. Que l'aventure commence !</p>
+
+
+          
+    <div class="button-container">
+    <button class="afficher-formulaire" data-form="formulaire1">Startups</button>
+    <button class="afficher-formulaire" data-form="formulaire2">Investisseurs</button>
+    <button class="afficher-formulaire" data-form="formulaire3">Emplois</button>
+  </div>
+  
+  <form id="formulaire1" class="hidden formulaire" action="#" method="post">
+    <h2>Formulaire pour les startups</h2>
+   <label for="nom">Nom de la startup :</label>
+                        <input type="text" id="nom" name="nom" required>
+                        
+                        <label for="Secteur">Secteur d'activité :</label>
+                        <input type="Secteur" id="Secteur" name="Secteur" required>     
+                
+                        <label for="Description">Description de la startup et de son projet :</label>
+                        <input type="Description" id="Description" name="Description" required>
+        
+                        <label for="Montant">Montant recherché :</label>
+                        <input type="Montant" id="Montant" name="Montant" required>
+                        
+                        <label for="Type d'investissement recherché">Type d'investissement recherché (financement, partenariat, etc.) :</label>
+                        <input type="Type d'investissement recherché" id="Type d'investissement recherché" name="Type d'investissement recherché" required>
+        
+                        <label for="Lien">Lien vers le site web de la startup (le cas échéant)</label>
+                        <input type="Lien" id="Lien" name="Lien" required>
+        
+                        <label for="Phone">Phone :</label>
+                        <input type="Phone" id="Phone" name="Phone" required>
+                
+                        <label for="Localisation">Localisation :</label>
+                        <input type="Localisation" id="Localisation" name="Localisation" required>
+                  
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <input type="submit" value="Envoyer">
+  </form>
+  
+  <form id="formulaire2" class="hidden formulaire" action="#" method="post">
+    <h2>Formulaire pour les investisseurs</h2>
+    <label for="Nom de l'investisseur">Nom de l'investisseur :</label>
+                    <input type="text" id="Nom de l'investisseur" name="Nom de l'investisseur" required>
+                    
+                    <label for="Société ou organisation">Société ou organisation :</label>
+                    <input type="Société ou organisation" id="Société ou organisation" name="Société ou organisation" required>     
+            
+                    <label for="Secteur d'investissement préféré">Secteur d'investissement préféré :</label>
+                    <input type="Secteur d'investissement préféré" id="Secteur d'investissement préféré" name="Secteur d'investissement préféré" required>
+    
+                    <label for="Montant potentiellement investi par projet">Montant potentiellement investi par projet :</label>
+                    <input type="Montant potentiellement investi par projet" id="Montant potentiellement investi par projet" name="Montant potentiellement investi par projet" required>
+                    
+                    <label for="région d'intérêt pour les investissements">région d'intérêt pour les investissements:</label>
+                    <input type="région d'intérêt pour les investissements" id="région d'intérêt pour les investissements" name="région d'intérêt pour les investissements" required>
+    
+        
+                    <label for="Coordonnées de l'investisseur">Coordonnées de l'investisseur :</label>
+                    <input type="Coordonnées de l'investisseur" id="Coordonnées de l'investisseur" name="Coordonnées de l'investisseur" required>
+            
+                     
+              
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Envoyer">
+  </form>
+  
+  <form id="formulaire3" class="hidden formulaire" action="#" method="post">
+    <h2>Formulaire pour les offres d'emploi dans des startups</h2>
+     <label for="nom">Nom de la startup :</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="Intitulé du poste">Intitulé du poste :</label>
+                    <input type="Intitulé du poste" id="Intitulé du poste" name="Intitulé du poste" required>     
+            
+                    <label for="Description">Description de la startup et de son projet :</label>
+                    <input type="Description" id="Description" name="Description" required>
+    
+                    <label for="Description du poste et des responsabilités">Description du poste et des responsabilités :</label>
+                    <input type="Description du poste et des responsabilités" id="Description du poste et des responsabilités" name="Description du poste et des responsabilités" required>
+                    
+                    <label for="Compétences requises">Compétences requises :</label>
+                    <input type="Compétences requises" id="Compétences requises" name="Compétences requises" required>
+    
+                    <label for="Niveau d'expérience souhaité">Niveau d'expérience souhaité</label>
+                    <input type="Niveau d'expérience souhaité" id="Niveau d'expérience souhaité" name="Niveau d'expérience souhaité" required>
+    
+                    <label for=" Type de contrat (CDI, CDD, stage, etc.)"> Type de contrat (CDI, CDD, stage, etc.) :</label>
+                    <input type=" Type de contrat (CDI, CDD, stage, etc.)" id=" Type de contrat (CDI, CDD, stage, etc.)" name=" Type de contrat (CDI, CDD, stage, etc.)" required>
+            
+                    <label for="Localisation">Localisation du poste :</label>
+                    <input type="Localisation" id="Localisation" name="Localisation" required>
+
+                    <label for="Coordonnées"> Les coordonnées :</label>
+                    <input type="Coordonnées" id="Coordonnées" name="Coordonnées" required>
+              
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Envoyer">
+  </form>
+</div>
+<script src="script.js"></script>
+
+
+
+
+       
+
+</section>
+
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
+            <p>STARTUPConnect  notre plateforme de connexion entre les esprits créatifs et les opportunités florissantes. Nous sommes votre passerelle vers un écosystème dynamique où les startups rencontrent des investisseurs passionnés et où les talents prometteurs trouvent leur place au sein d'entreprises en pleine croissance. Notre mission est de catalyser l'innovation en facilitant ces rencontres cruciales, que ce soit pour investir dans l'avenir ou pour façonner une carrière florissante. Rejoignez-nous dans cette aventure où les idées prennent vie et où les opportunités abondent.
+            </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+               
+                
+                 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Startups" id="Startups">
+    <div class="titre">
+        <h2 class="titre-texte"><span>Pour</span>les Startups Prometteuses</h2>
+        <ul>
+            <li> Êtes-vous prêt à propulser votre startup vers de nouveaux sommets ? Inscrivez-vous dès maintenant pour rejoindre notre communauté dynamique d'entrepreneurs ambitieux et Présentez votre projet avec conviction et détaillez votre vision dans un profil captivant.</li>
+            <li> Parcourez notre liste exclusive d'investisseurs passionnés par l'innovation dans votre domaine. Vous êtes à un pas de faire décoller votre startup !</li>
+        </ul>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+               
+            </div>
+            <div class="text">
+                 
+                    <div class="container">
+                    <div class="button-container">
+                        <button class="afficher-formulaire" data-form="formulaire1">Formulaire pour les Startups</button>
+                      </div>
+
+                      <form id="formulaire1" class="hidden formulaire" action="#" method="post">
+                        <label for="nom">Nom de la startup :</label>
+                        <input type="text" id="nom" name="nom" required>
+                        
+                        <label for="Secteur">Secteur d'activité :</label>
+                        <input type="Secteur" id="Secteur" name="Secteur" required>     
+                
+                        <label for="Description">Description de la startup et de son projet :</label>
+                        <input type="Description" id="Description" name="Description" required>
+        
+                        <label for="Montant">Montant recherché :</label>
+                        <input type="Montant" id="Montant" name="Montant" required>
+                        
+                        <label for="Type d'investissement recherché">Type d'investissement recherché (financement, partenariat, etc.) :</label>
+                        <input type="Type d'investissement recherché" id="Type d'investissement recherché" name="Type d'investissement recherché" required>
+        
+                        <label for="Lien">Lien vers le site web de la startup (le cas échéant)</label>
+                        <input type="Lien" id="Lien" name="Lien" required>
+        
+                        <label for="Phone">Phone :</label>
+                        <input type="Phone" id="Phone" name="Phone" required>
+                
+                        <label for="Localisation">Localisation :</label>
+                        <input type="Localisation" id="Localisation" name="Localisation" required>
+                  
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <input type="submit" value="Envoyer">
+                      </form>
+                    
+                    
+            </div>
+        </div>
+</section>
+
+
+<section class="investors" id="investors">
+    <div class="titre">
+        <h2 class="titre-texte"><span>Pour</span>les Investisseurs Passionnés</h2>
+        <ul>
+            <li> Bienvenue dans le monde des opportunités illimitées ! Inscrivez-vous pour rejoindre notre réseau sélect d'investisseurs avisé.</li>
+            <li> Explorez une multitude de startups prometteuses, triées sur le volet en fonction de vos préférences d'investissement.</li>
+            <li>Entamez des conversations avec les fondateurs pour comprendre leur vision et les opportunités de croissance.</li>
+        </ul>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                 
+            </div>
+            <div class="text">
+                 <div class="container"> 
+
+                <div class="button-container">
+
+                     
+                    <button class="afficher-formulaire" data-form="formulaire2">Formulaire pour les investisseurs</button>
+                     
+                  </div>
+
+                  <form id="formulaire2" class="hidden formulaire" action="#" method="post">
+                    <label for="Nom de l'investisseur">Nom de l'investisseur :</label>
+                    <input type="text" id="Nom de l'investisseur" name="Nom de l'investisseur" required>
+                    
+                    <label for="Société ou organisation">Société ou organisation :</label>
+                    <input type="Société ou organisation" id="Société ou organisation" name="Société ou organisation" required>     
+            
+                    <label for="Secteur d'investissement préféré">Secteur d'investissement préféré :</label>
+                    <input type="Secteur d'investissement préféré" id="Secteur d'investissement préféré" name="Secteur d'investissement préféré" required>
+    
+                    <label for="Montant potentiellement investi par projet">Montant potentiellement investi par projet :</label>
+                    <input type="Montant potentiellement investi par projet" id="Montant potentiellement investi par projet" name="Montant potentiellement investi par projet" required>
+                    
+                    <label for="région d'intérêt pour les investissements">région d'intérêt pour les investissements:</label>
+                    <input type="région d'intérêt pour les investissements" id="région d'intérêt pour les investissements" name="région d'intérêt pour les investissements" required>
+    
+        
+                    <label for="Coordonnées de l'investisseur">Coordonnées de l'investisseur :</label>
+                    <input type="Coordonnées de l'investisseur" id="Coordonnées de l'investisseur" name="Coordonnées de l'investisseur" required>
+            
+                     
+              
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Envoyer">
+                  </form>
+                
+                
+            </div>
+        </div>
+</section>
+
+
+<section class="jobs" id="jobs">
+    <div class="titre">
+        <h2 class="titre-texte"><span>Explorez</span>des Opportunités d'Emploi</h2>
+        <ul>
+            <li>Vous souhaitez faire partie d'une aventure entrepreneuriale passionnante ? Découvrez des offres d'emploi dans des startups innovantes qui cherchent à élargir leurs équipes.</li>
+            <li> Postulez directement aux offres qui correspondent à vos compétences et à vos aspirations professionnelles.</li>
+            <li>Soyez prêt à embrasser une carrière dynamique dans le monde en pleine évolution des startups !</li>
+        </ul>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                
+            </div>
+            <div class="text">
+                <div class="container">
+
+                <div class="button-container">
+                    <button class="afficher-formulaire" data-form="formulaire3">Formulaire pour les offres d'emploi dans des startups</button>
+                  </div>
+                
+                  <form id="formulaire3" class="hidden formulaire" action="#" method="post">
+                   
+                    <label for="nom">Nom de la startup :</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="Intitulé du poste">Intitulé du poste :</label>
+                    <input type="Intitulé du poste" id="Intitulé du poste" name="Intitulé du poste" required>     
+            
+                    <label for="Description">Description de la startup et de son projet :</label>
+                    <input type="Description" id="Description" name="Description" required>
+    
+                    <label for="Description du poste et des responsabilités">Description du poste et des responsabilités :</label>
+                    <input type="Description du poste et des responsabilités" id="Description du poste et des responsabilités" name="Description du poste et des responsabilités" required>
+                    
+                    <label for="Compétences requises">Compétences requises :</label>
+                    <input type="Compétences requises" id="Compétences requises" name="Compétences requises" required>
+    
+                    <label for="Niveau d'expérience souhaité">Niveau d'expérience souhaité</label>
+                    <input type="Niveau d'expérience souhaité" id="Niveau d'expérience souhaité" name="Niveau d'expérience souhaité" required>
+    
+                    <label for=" Type de contrat (CDI, CDD, stage, etc.)"> Type de contrat (CDI, CDD, stage, etc.) :</label>
+                    <input type=" Type de contrat (CDI, CDD, stage, etc.)" id=" Type de contrat (CDI, CDD, stage, etc.)" name=" Type de contrat (CDI, CDD, stage, etc.)" required>
+            
+                    <label for="Localisation">Localisation du poste :</label>
+                    <input type="Localisation" id="Localisation" name="Localisation" required>
+
+                    <label for="Coordonnées"> Les coordonnées :</label>
+                    <input type="Coordonnées" id="Coordonnées" name="Coordonnées" required>
+              
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Envoyer">
+                  </form>
+                </div>
+                  <script src="script.js"></script>
+
+            </div>
+        </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <div class="titre noir">
+        <h2 class="titre-text"><span>C</span>ontact</h2>
+    </div>
+    <div class="contactform">
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Envoyer">
+        </form>
+    </body>
+    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Guelma 24000 <br/>
+          Algerie,Guelma<br/>
+          Guelma ville  <br/><br/>
+          <strong>Téléhone:</strong> +213<br/>
+          <strong>Email:</strong><a href='#'>  StartupConnect@gmail.com<br/></a> 
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+ <div class="copyright">
+     <p>copyright 2023 <a href="#"> ADOUI</a> </p>
+ </div>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
+</html>
